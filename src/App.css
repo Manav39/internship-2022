@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-img{
+  background: url('./assets/images/hero.jpg');
+}
+
+.img-position{
+  float: right;
+}
+.hero-text{
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+
+}
