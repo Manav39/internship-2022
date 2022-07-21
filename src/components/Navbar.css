@@ -4,30 +4,33 @@
     padding: 0;
 }
 
-.nav{
+.topbar{
     background-color: #f6f8f7;
     min-height: 40px;
     line-height: 5px;
     padding-top: 15px;
+    position: sticky;
 }
-.nav ul{
-    padding-top: 10px;
+.topbar ul{
+    padding-top: 5px;
     display: flex;
-    justify-content: space-between;
-    gap:70px;
-    padding-left: 75px;
-    padding-right: 150px;
-    padding-bottom: 10px;
+    justify-content: space-evenly;
+    /* gap:70px;
+    /*padding-left: 75px;
+    padding-right: 150px;*/
+    padding-bottom: 10px;  
 }
 
-.nav ul {
+.topbar ul {
     list-style: none;
 }
-.nav-item{
+.item-2{
     text-decoration: none;
     color:black;
     font-size: 20px;
     line-height: 1.5;
+    padding-top: 5px;
+    justify-content: space-evenly;
 }
 /* .nav-item-1{
     text-decoration: none;
@@ -46,6 +49,7 @@
     font-size: 25px;
     font-weight: bolder;
     padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 img{
