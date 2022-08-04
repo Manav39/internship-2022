@@ -39,6 +39,8 @@
 
 .bg-img{
   background: url('./assets/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img-position{
@@ -49,4 +51,61 @@
   justify-content: left;
   align-items: left;
 
+}
+
+#gmap_canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.contact-form {
+  z-index: 3;
+  position: absolute;
+  top : 25%;
+  left: 20%;
+  bottom: 20%;
+  right: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dark-overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  opacity: 25%;
+  background-color: grey;
+  position: absolute;
+  pointer-events: none;
+}
+
+.contact-form input {
+  width: 20vw;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  transition: border-color 1s ease;
+  border-radius: 0%;
+}
+
+.contact-form input:focus {
+  border-bottom: 1px solid darkblue;
+}
+
+.contact-form input:active {
+  border-bottom: 1px solid darkblue;
+}
+
+.contact-button {
+  width: 20vw;
+}
+
+.textarea-fixed {
+  resize: none;
+  width: 19vw;
+  border: none;
+  border-bottom: 1px solid lightgrey;
 }

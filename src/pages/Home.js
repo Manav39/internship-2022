@@ -5,8 +5,6 @@ const Home = () => {
   return (
     <div className='App bg-img'>
       <Carousel>
-        <Carousel.Caption className='hero-text'>EFB IBFIERFB IH FIHRFIHE RIEHB GHI
-</Carousel.Caption>
       <Carousel.Item>
         <img
           className="d-block w-50 img-position"
