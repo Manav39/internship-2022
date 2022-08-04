@@ -42,7 +42,11 @@
 }
 
 .img-position{
+  margin-top: 50px;
   float: right;
+  object-fit: cover;
+  height: 600px;
+  margin-bottom: 80px;
 }
 .hero-text{
   text-align: left;

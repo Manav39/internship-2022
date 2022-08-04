@@ -15,14 +15,13 @@
     padding-top: 5px;
     display: flex;
     justify-content: space-evenly;
-    /* gap:70px;
-    /*padding-left: 75px;
-    padding-right: 150px;*/
+    padding-right: 150px;
     padding-bottom: 10px;  
 }
 
-.topbar ul {
+.topbar > ul {
     list-style: none;
+    margin-bottom: 0;
 }
 .item-2{
     text-decoration: none;
@@ -31,13 +30,13 @@
     line-height: 1.5;
     padding-top: 5px;
     justify-content: space-evenly;
-}
-/* .nav-item-1{
+} 
+ .nav-item-1{
     text-decoration: none;
     color:black;
     font-weight: 1000;
     font-size: 20px;
-} */
+} 
 
 .logo-with-text{
     text-decoration: none;
@@ -61,3 +60,4 @@ img{
 .search-img{
     width: 30px;
 }
+

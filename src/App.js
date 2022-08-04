@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Buy from './pages/Buy'
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './pages/Footer';
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/buy" element={<Buy/>}/>
     </Routes>
+    <Footer/>
     </div>
   );
 }
