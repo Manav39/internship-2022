@@ -50,3 +50,13 @@
 .gallery-section .img_box.box-5 {
   width: 32%;
 }
+
+
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
+  .gallery-section .img_box {
+    width: 100% !important;
+  }
+}

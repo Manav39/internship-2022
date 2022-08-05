@@ -60,3 +60,22 @@
   .client_section .carousel-indicators .active {
     background-color: #8c8a8a;
   }
+
+  @media screen and (max-width : 500px){
+    .client_section .client_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .client_section .pl-100 {
+      padding-left: 0;
+    }
+  
+    .client_section .client_container .img_box {
+      margin: -150px auto 25px auto;
+    }
+  
+    .client_section .client_container {
+      margin-top: 100px;
+    }
+  }

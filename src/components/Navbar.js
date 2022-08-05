@@ -1,26 +1,132 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Navbar.css'
-import logo from '../assets/images/logo.png'
-import search from '../assets/images/search-icon.png'
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../assets/images/logo.png";
+import search from "../assets/images/search-icon.png";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
   return (
     <>
-    <div className="topbar">
-      <ul className='topbar-container'>
-      <li><Link to="/" className='nav-item-1 logo-with-text'><img src={logo} alt="Navbar"/>PET WEBSITE</Link></li> 
-      <li><Link to="/" className='item-2 '>HOME</Link></li>
-      <li><Link to="/service" className='item-2'>SERVICE</Link></li>
-      <li><Link to="/gallery" className='item-2'>PET'S GALLERY</Link></li>
-      <li><Link to="/clinic" className='item-2'>CLINIC</Link></li>
-      <li><Link to="/contact" className='item-2'>CONTACT</Link></li>
-      <li><Link to="/buy" className='item-2'>BUY NOW</Link></li>
-      <li><Link to="/" className='item-2'><img src={search} className='search-img' alt="Navbar-img"/></Link></li>
-      <li><Link to="/buy" className='item-2'>CALL: +91 9999999999</Link></li>
-      </ul>
-    </div>
+      <div className="top-portion"></div>
+      <div className=" navbar">
+        <div className="nav-container">
+          <NavLink
+            exact
+            to="/"
+            activeClassName="active"
+            className="logo-with-text nav-item-1 topbar-container"
+            onClick={handleClick}
+          >
+            <table>
+              <tr>
+                <td style={{ paddingLeft: "50px" }}>
+                  <img src={logo} alt="Navbar" />
+                </td>
+              </tr>
+              <tr>
+                <td style={{ fontSize: "21.5px" }}>PET WEBSITE</td>
+              </tr>
+            </table>
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                HOME
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/service"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                SERVICE
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/gallery"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                PET'S GALLERY
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/clinic"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                CLINIC
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                CONTACT
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/buy"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                BUY NOW
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                <img src={search} className="search-img" alt="Navbar-img" />
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/buy"
+                activeClassName="active"
+                className=" nav-links"
+                onClick={handleClick}
+              >
+                CALL: +91 9999999999
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
