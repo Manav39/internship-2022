@@ -20,7 +20,9 @@
 .about_section .detail-box p {
     margin: 25px 0;
 }
-
+.about_section .detail-box{
+    text-align: left;
+}
 .about_section .detail-box a {
     display: inline-block;
     padding: 10px 20px;
@@ -28,7 +30,9 @@
     border: 1px solid #023b48;
     color: #ffffff;
     text-decoration: none;
+    
 }
+
 
 .about_section .detail-box a:hover {
     background-color: transparent;

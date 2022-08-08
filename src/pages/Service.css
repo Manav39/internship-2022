@@ -4,6 +4,12 @@
 .custom_heading {
     color: #030404;
     padding: auto;
+    text-align: left;
+    font-size: 40px;
+
+}
+.detail_box h6{
+  font-size: 18px;
 }
 .custom_heading span {
     color: #21d7ff;
@@ -63,6 +69,8 @@
     margin-right: 600px;
     width: 150px;
     height: 50px;
+    font-size: 16px;
+    font-stretch: normal;
   }
   
   .service_section a:hover {
@@ -73,4 +81,19 @@
 
   .layout_padding2 {
     padding: 45px 0;
+  }
+  @media screen and (max-width : 770px){
+    .custom_heading {
+  
+      text-align: center;
+  }
+    .service_section a{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+  }
+  .service_section .row .col-md-4 {
+    width: auto;
+  }
   }

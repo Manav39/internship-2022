@@ -17,7 +17,7 @@ const Clinic = () => {
               <div className="detail-box">
                 <h2 className="custom_heading">
                   About Our Pets
-                  <span>Clinic</span>
+                  <span> Clinic</span>
                 </h2>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
