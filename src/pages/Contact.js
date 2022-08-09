@@ -1,8 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import {Navigate} from "react-router-dom"
 
 const Contact = () => {
+  const [userName, setUserName] = useState("")
+  const [userEmail, setUserEmail] = useState("")
+  const [userPhone, setUserPhone] = useState("")
+  const [userMessage, setUserMessage] = useState("")
+  const [dataSent, setDataSent] = useState(false)
+  const sendContactData = async () => {
+      const userData = {
+          name: userName,
+          email: userEmail,
+          phone: userPhone,
+          message: userMessage
+      }
+
+      const backendURL = "https://tranquil-harbor-85614.herokuapp.com/contact"
+
+      const response = await fetch(
+          backendURL,
+          {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json"
+              },
+              body: JSON.stringify(userData)
+          }
+      )
+      if (!response.ok){
+          console.table(response)
+      } else {
+          setUserName("")
+          setUserEmail("")
+          setUserPhone("")
+          setUserMessage("")
+          setDataSent(true)
+      }
+  }
+
   return (
     <div className="App">
       <div className="dark-overlay"></div>
@@ -23,27 +60,43 @@ const Contact = () => {
             className="mb-3"
             type="text"
             placeholder="Your Name"
+            value={userName}
+            onChange={(e) => {
+              setUserName(e.target.value)
+            }}
             required
           ></Form.Control>
           <Form.Control
             className="mb-3"
             type="email"
             placeholder="Your Email"
+            value={userEmail}
+            onChange={(e) => {
+              setUserEmail(e.target.value)
+            }}
             required
           ></Form.Control>
           <Form.Control
             className="mb-3"
             type="text"
             placeholder="Your Phone Number"
+            value={userPhone}
+            onChange={(e) => {
+              setUserPhone(e.target.value)
+            }}
             required
           ></Form.Control>
           <textarea
             placeholder="Your Message"
             className="textarea-fixed"
+            value={userMessage}
+            onChange={(e) => {
+              setUserMessage(e.target.value)
+            }}
           ></textarea>
         </Form>
-        <Button variant="primary" className="contact-button">
-          Send
+        <Button variant="primary" className="contact-button" onClick={sendContactData}>
+            {dataSent ? "Thank You!" : "Send"}
         </Button>
       </div>
     </div>
