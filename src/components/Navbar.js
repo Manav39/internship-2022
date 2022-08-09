@@ -113,7 +113,7 @@ const Navbar = () => {
                 exact
                 to="/buy"
                 activeClassName="active"
-                className=" nav-links"
+                className=" nav-links hide"
                 onClick={handleClick}
               >
                 CALL: +91 9999999999

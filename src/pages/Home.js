@@ -12,29 +12,30 @@ const Home = () => {
     <div className='App bg-img'>
       <Carousel style={{width : '100%',objectFit : 'cover'}}>
       <Carousel.Item>
-        <img
-          className="d-block w-50 img-position"
+       
+         <img
+          className="d-block w-50 img-position img-fluid"
           src={slider}
           alt="First slide"
-        />
+        /> 
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-50 img-position"
+          className="d-block w-50 img-position img-fluid"
           src={slider}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-50 img-position"
+          className="d-block w-50 img-position img-fluid"
           src={slider}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={true}>
         <img
-          className="d-block w-50 img-position "
+          className="d-block w-50 img-position img-fluid"
           src={slider}
           alt="Third slide"
         />

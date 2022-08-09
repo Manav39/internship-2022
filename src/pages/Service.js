@@ -6,7 +6,6 @@ import Image4 from "../assets/images/tool.png";
 import "./Service.css";
 const Service = () => {
   return (
-    <div className="App">
       <section className="service_section layout_padding">
         <div className="container-fluid">
           <div className="row">
@@ -60,14 +59,14 @@ const Service = () => {
               <div>
                 <a href="">Read More</a>
               </div>
+              <br/>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 ">
               <img src={Image4} className="w-100" />
             </div>
           </div>
         </div>
       </section>
-    </div>
   );
 };
 
