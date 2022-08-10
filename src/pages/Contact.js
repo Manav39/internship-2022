@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import {Navigate} from "react-router-dom"
 
-const Contact = () => {
+const Contact = (props) => {
   const [userName, setUserName] = useState("")
   const [userEmail, setUserEmail] = useState("")
   const [userPhone, setUserPhone] = useState("")
@@ -52,7 +51,7 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
-      <div className="contact-form">
+      <div className="contact-form " style={{position : `${props.contactpos}`}}>
         <h2 className="contact-text">Contact&nbsp;Us</h2>
         <br />
         <Form>
