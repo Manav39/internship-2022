@@ -31,26 +31,6 @@ const Buy = () => {
             orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut la
           </p>
-          <div
-            id="carouselExample2Indicators"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExample2Indicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExample2Indicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExample2Indicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
             <Carousel interval={3000}>
               <Carousel.Item>
                 <div className="carousel-inner">
@@ -125,7 +105,6 @@ const Buy = () => {
                 </div>
               </Carousel.Item>
             </Carousel>
-          </div>
         </div>
       </section>
     </>
