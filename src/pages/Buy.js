@@ -31,80 +31,80 @@ const Buy = () => {
             orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut la
           </p>
-            <Carousel interval={3000}>
-              <Carousel.Item>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="layout_padding2 pl-100">
-                      <div className="client_container ">
-                        <div className="img_box">
-                          <img src={client} alt="" />
-                        </div>
-                        <div className="detail_box">
-                          <h5>Sandy Mark</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                          </p>
-                        </div>
+          <Carousel interval={3000}>
+            <Carousel.Item>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="layout_padding2 pl-100">
+                    <div className="client_container ">
+                      <div className="img_box">
+                        <img src={client} alt="" />
+                      </div>
+                      <div className="detail_box">
+                        <h5>Sandy Mark</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="layout_padding2 pl-100">
-                      <div className="client_container ">
-                        <div className="img_box">
-                          <img src={client} alt="" />
-                        </div>
-                        <div className="detail_box">
-                          <h5>Sandy Mark</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                          </p>
-                        </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="layout_padding2 pl-100">
+                    <div className="client_container ">
+                      <div className="img_box">
+                        <img src={client} alt="" />
+                      </div>
+                      <div className="detail_box">
+                        <h5>Sandy Mark</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="layout_padding2 pl-100">
-                      <div className="client_container ">
-                        <div className="img_box">
-                          <img src={client} alt="" />
-                        </div>
-                        <div className="detail_box">
-                          <h5>Sandy Mark</h5>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                          </p>
-                        </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="layout_padding2 pl-100">
+                    <div className="client_container ">
+                      <div className="img_box">
+                        <img src={client} alt="" />
+                      </div>
+                      <div className="detail_box">
+                        <h5>Sandy Mark</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Carousel.Item>
-            </Carousel>
+              </div>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </section>
     </>

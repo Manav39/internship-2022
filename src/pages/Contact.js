@@ -1,43 +1,40 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const Contact = (props) => {
-  const [userName, setUserName] = useState("")
-  const [userEmail, setUserEmail] = useState("")
-  const [userPhone, setUserPhone] = useState("")
-  const [userMessage, setUserMessage] = useState("")
-  const [dataSent, setDataSent] = useState(false)
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userPhone, setUserPhone] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+  const [dataSent, setDataSent] = useState(false);
   const sendContactData = async () => {
-      const userData = {
-          name: userName,
-          email: userEmail,
-          phone: userPhone,
-          message: userMessage
-      }
+    const userData = {
+      name: userName,
+      email: userEmail,
+      phone: userPhone,
+      message: userMessage,
+    };
 
-      const backendURL = "https://tranquil-harbor-85614.herokuapp.com/contact"
+    const backendURL = "https://tranquil-harbor-85614.herokuapp.com/contact";
 
-      const response = await fetch(
-          backendURL,
-          {
-              method: "POST",
-              headers: {
-                  "Content-Type": "application/json"
-              },
-              body: JSON.stringify(userData)
-          }
-      )
-      if (!response.ok){
-          console.table(response)
-      } else {
-          setUserName("")
-          setUserEmail("")
-          setUserPhone("")
-          setUserMessage("")
-          setDataSent(true)
-      }
-  }
+    const response = await fetch(backendURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    });
+    if (!response.ok) {
+      console.table(response);
+    } else {
+      setUserName("");
+      setUserEmail("");
+      setUserPhone("");
+      setUserMessage("");
+      setDataSent(true);
+    }
+  };
 
   return (
     <div className="App">
@@ -51,7 +48,10 @@ const Contact = (props) => {
           ></iframe>
         </div>
       </div>
-      <div className="contact-form " style={{position : `${props.contactpos}`}}>
+      <div
+        className="contact-form "
+        style={{ position: `${props.contactpos}` }}
+      >
         <h2 className="contact-text">Contact&nbsp;Us</h2>
         <br />
         <Form>
@@ -61,7 +61,7 @@ const Contact = (props) => {
             placeholder="Your Name"
             value={userName}
             onChange={(e) => {
-              setUserName(e.target.value)
+              setUserName(e.target.value);
             }}
             required
           ></Form.Control>
@@ -71,7 +71,7 @@ const Contact = (props) => {
             placeholder="Your Email"
             value={userEmail}
             onChange={(e) => {
-              setUserEmail(e.target.value)
+              setUserEmail(e.target.value);
             }}
             required
           ></Form.Control>
@@ -81,7 +81,7 @@ const Contact = (props) => {
             placeholder="Your Phone Number"
             value={userPhone}
             onChange={(e) => {
-              setUserPhone(e.target.value)
+              setUserPhone(e.target.value);
             }}
             required
           ></Form.Control>
@@ -90,12 +90,16 @@ const Contact = (props) => {
             className="textarea-fixed"
             value={userMessage}
             onChange={(e) => {
-              setUserMessage(e.target.value)
+              setUserMessage(e.target.value);
             }}
           ></textarea>
         </Form>
-        <Button variant="primary" className="contact-button" onClick={sendContactData}>
-            {dataSent ? "Thank You!" : "Send"}
+        <Button
+          variant="primary"
+          className="contact-button"
+          onClick={sendContactData}
+        >
+          {dataSent ? "Thank You!" : "Send"}
         </Button>
       </div>
     </div>
@@ -103,3 +107,5 @@ const Contact = (props) => {
 };
 
 export default Contact;
+
+
