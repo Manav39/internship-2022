@@ -1,3 +1,28 @@
+# Installation / Setup
+
+Requires:
+	NodeJS (any version, latest is preferred)
+	NPM Package Manager
+
+
+Run the following commands in your terminal
+
+```
+npm install --save-dev --legacy-peer-deps
+```
+
+To launch the app, run -
+
+```
+npm run start
+```
+
+Then, navigate to [http://localhost:3000/](http://localhost:3000/)
+
+You can export the contact data by visiting the following URL:
+
+`[https://tranquil-harbor-85614.herokuapp.com/contact/export](https://tranquil-harbor-85614.herokuapp.com/contact/export)`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
